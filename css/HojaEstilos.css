@@ -1,5 +1,5 @@
 .header {
-    height: 500px;
+    height: 400px;
     background: #333;
 }
 
@@ -11,8 +11,8 @@
 .imgportada {
     display: block;
     margin: auto;
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
 }
 
 .main {
