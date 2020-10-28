@@ -1,20 +1,59 @@
 .header {
-    height: 400px;
-    background: #333;
+    background: linear-gradient(lightpink, violet);
+    margin-top: -8px;
+    margin-right: -8px;
+    margin-left: -8px;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
 }
 
-.header .contenedor {
-    display: block;
-    justify-content: space-between;
+.body{
+    color: whitesmoke;
 }
-
+.imagenPortada{
+    position: relative;
+    padding-top: 2em;
+    padding-right: 10em;
+    margin-bottom: 1em;
+    float: right;
+}
 .imgportada {
-    display: block;
-    margin: auto;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 
+h1{
+    size: 140cm;
+    color: white;
+
+}
+
+.textoPortada{
+    text-align: left;
+    font-size: 35px;
+    padding-top: 3.5cm;
+    padding-left: 9.5cm;
+
+}
+
+h2{
+    font-size: 30px;
+    color: rgb(65, 64, 64);
+
+}
 .main {
-    background-color: grey;
+    margin-top: -20px;
+    margin-left: 3cm;
+}
+.opciones{
+    text-align: center;
+}
+.imgLocal, .imgCatalogo{
+    
+    vertical-align: middle;
+    float: center;
+    height: 150px;
+    border: rgb(207, 148, 207) 4px solid;
+    padding: 10px;
+    margin: 10px;
 }
