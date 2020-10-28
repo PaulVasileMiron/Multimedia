@@ -10,14 +10,39 @@
 <body>
 
     <header class="header">
-        <div class="contenedor">
-            <img src="img/imagen1.png" class="imgportada">
-            <p class="Servicios">Cuales son nuestro servicios</p>
-        </div>
+            <div class="imagenPortada">
+                <img src="img/imagen1.png" class="imgportada">
+            </div>
+             <div class="textoPortada">
+                <h1>We make <br> Exclusive videos </h1>
+    
+             </div>  
     </header>
     <main class="main">
-        <h1>Hola</h1>
-
+        <h2>SERVICIOS</h2>
+        <br>
+        <div class="opciones">
+            <img src="img/icono1.png" alt="Catalogo de videos" class="imgLocal">
+            Ficheros en local
+            <img src="img/icono2.png" class="imgCatalogo">
+        </div>
+        <br>
+        <video src="videos/Educar en valores_ corto sobre bullying.mp4" controls>
+            Tu navegador no implementa el elemento <code>video</code>.
+        </video>
+        <br>
+        <video src="videos/Adivinanzas para niños Preguntas y respuestas - Las frutas para niños.mp4" controls>
+            Tu navegador no implementa el elemento <code>video</code>.
+        </video>
+        <br>
+        <video id="demo" src="videos/Educar en valores_ corto sobre bullying.mp4"></video>
+        <div>
+            <button onclick="document.getElementById('demo').play()">Reproducir el video</button>
+            <button onclick="document.getElementById('demo').pause()">Pausar el video</button>
+            <button onclick="document.getElementById('demo').volume+=0.1">Aumentar el Volumen</button>
+            <button onclick="document.getElementById('demo').volume-=0.1">Disminuir el Volumen</button>
+        </div>
+        
     </main>
 
 </body>
