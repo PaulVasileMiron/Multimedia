@@ -1,39 +1,42 @@
 .header {
+    display: block;
+    position: relative;
     background: linear-gradient(lightpink, violet);
-    margin-top: -8px;
+    width: 100%;
+    height: 500px;
+    /*margin-top: -8px;
     margin-right: -8px;
     margin-left: -8px;
     margin-bottom: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 100px;*/
 }
 
-.body{
-    color: whitesmoke;
-}
 .imagenPortada{
     position: relative;
-    padding-top: 2em;
-    padding-right: 10em;
-    margin-bottom: 1em;
+    right: 10em;
+    top: 2em;
     float: right;
 }
+
 .imgportada {
     height: 400px;
     width: 400px;
 }
 
-h1{
+
+.textoPortada{
+    position: relative;
+    float: left;
     size: 140cm;
     color: white;
+    font-size: 35px;
+    top: 3.5cm;
+    left: 9.5cm;
 
 }
 
-.textoPortada{
-    text-align: left;
-    font-size: 35px;
-    padding-top: 3.5cm;
-    padding-left: 9.5cm;
-
+.body{
+    color: whitesmoke;
 }
 
 h2{
@@ -49,7 +52,6 @@ h2{
     text-align: center;
 }
 .imgLocal, .imgCatalogo{
-    
     vertical-align: middle;
     float: center;
     height: 150px;
