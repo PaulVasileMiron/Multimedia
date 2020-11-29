@@ -1,0 +1,32 @@
+.headerLocal{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(245, 180, 180);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.videoLocal{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 720px;
+    background-color: rgb(173, 173, 173);
+    justify-items: center;
+}
+
+.footerLocal{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(245, 180, 180);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#demo{
+    max-height: 650px;
+}
