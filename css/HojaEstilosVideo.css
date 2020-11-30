@@ -1,4 +1,4 @@
-.headerLocal{
+.headerLocal {
     position: relative;
     display: block;
     width: 100%;
@@ -8,7 +8,12 @@
     border-top-right-radius: 15px;
 }
 
-.videoLocal{
+.formulario {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.videoLocal {
     display: block;
     position: relative;
     width: 100%;
@@ -17,7 +22,13 @@
     justify-items: center;
 }
 
-.footerLocal{
+#demo {
+    padding-top: 35px;
+    width: 100%;
+    height: 700px;
+}
+
+.footerLocal {
     display: block;
     position: relative;
     width: 100%;
@@ -27,6 +38,6 @@
     border-bottom-right-radius: 15px;
 }
 
-#demo{
+#demo {
     max-height: 650px;
 }
