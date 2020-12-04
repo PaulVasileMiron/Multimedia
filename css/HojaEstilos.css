@@ -9,11 +9,6 @@
     width: 100%;
     height: 500px;
     border-radius: 15px;
-    /*margin-top: -8px;
-    margin-right: -8px;
-    margin-left: -8px;
-    margin-bottom: 50px;
-    padding-bottom: 100px;*/
 }
 
 .imagenPortada {
@@ -60,23 +55,26 @@ h2 {
     align-items: center;
 }
 
-.imgCatalogo {
+.cuadroCatalogo {
     grid-column-start: 2;
     grid-row-start: 1;
     justify-self: center;
+}
+
+.cuadroLocal {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    justify-self: center;
+}
+
+.imgLocal{
     height: 150px;
     width: 150px;
     border: rgb(207, 148, 207) 4px solid;
     padding: 10px;
 }
 
-.imgaLocal {
-    grid-row-start: 1;
-    grid-column-start: 3;
-    justify-self: center;
-}
-
-.imgLocal {
+.imgCatalogo{
     height: 150px;
     width: 150px;
     border: rgb(207, 148, 207) 4px solid;
