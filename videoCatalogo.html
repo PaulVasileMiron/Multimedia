@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>Catalogo</title>
     <link rel="stylesheet" href="css/HojaEstilosLibreria.css">
+    <link rel="shortcut icon" href= "icon/imagen1.ico" type= "image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/libreria.js"></script>
 </head>
 <header>
@@ -15,14 +17,19 @@
 
 <body>
     <div class="Catalogo">
-        <div id="zonaCatalogo">
-
-        </div>
+        <section id="ListaVideo">
+            <article id="Lista">
+                <button onclick="CambiaVideo(1)">Cargar video 1</button>
+                <button onclick="CambiaVideo(2)">Cargar video 2</button>
+                <button onclick="CambiaVideo(3)">Cargar video 3</button>
+            </article>
+        </section>    
         <div id="zonaVideo">
             <video controls id="video">
                 <source src="videos/video1.mp4">
             </video>
         </div>
+        
     </div>
 
 </body>

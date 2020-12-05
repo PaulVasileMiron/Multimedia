@@ -56,8 +56,8 @@ h2 {
 }
 
 .cuadroCatalogo {
-    grid-column-start: 2;
     grid-row-start: 1;
+    grid-column-start: 2;
     justify-self: center;
 }
 
@@ -67,6 +67,19 @@ h2 {
     justify-self: center;
 }
 
+.cuadroVideoOnline {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    justify-self: center;
+}
+
+.imgCatalogo{
+    height: 150px;
+    width: 150px;
+    border: rgb(207, 148, 207) 4px solid;
+    padding: 10px;
+}
+
 .imgLocal{
     height: 150px;
     width: 150px;
@@ -74,7 +87,7 @@ h2 {
     padding: 10px;
 }
 
-.imgCatalogo{
+.imgVideoOnline{
     height: 150px;
     width: 150px;
     border: rgb(207, 148, 207) 4px solid;
@@ -92,8 +105,14 @@ p {
     justify-self: center;
 }
 
-.Carga {
+.Local {
     grid-column-start: 3;
+    grid-row-start: 2;
+    justify-self: center;
+}
+
+.VideoOnline {
+    grid-column-start: 4;
     grid-row-start: 2;
     justify-self: center;
 }

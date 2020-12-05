@@ -1,4 +1,4 @@
-var myvid = document.getElementById('video');
+/*var myvid = document.getElementById('video');
 var myvids = [
   "videos\video1.mp4", 
   "videos\video2.mp4"
@@ -12,4 +12,8 @@ myvid.addEventListener('ended', function(e) {
   // update the video source and play
   myvid.src = myvids[activeVideo];
   myvid.play();
-});
+});*/
+
+function CambiaVideo(idVideo){
+  var video=$("#video").attr("src","videos/video"+idVideo+".mp4")
+}

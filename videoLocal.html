@@ -5,13 +5,15 @@
     <meta charset="utf-8" />
     <title>VideoLocal</title>
     <link rel="stylesheet" href="css/HojaEstilosVideo.css">
-    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href= "icon/imagen1.ico" type= "image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/videoLocal.js"></script>
 </head>
 <header>
     <div class="headerLocal" id="zonaSelector">
         <form name="formulario" class="formulario">
             <p>
-                Seleccionar video: <br><input type="file" accept="video/*, .mkv, .asf, .flv, .rm, .rmvb, .3gpp" name="selector" id="selector">
+                Seleccionar video: <br><input type="file" accept="video/*, .mkv, .asf, .flv, .rm, .rmvb, .3gpp, .mp4, .avi, .mpg" name="selector" id="selector">
             </p>
         </form>
     </div>
@@ -19,10 +21,11 @@
 
 <body>
     <div class="videoLocal" id="zonaVideo">
-        <video id="demo" src="videos/Educar en valores_ corto sobre bullying.mp4"></video>
+        <video controls autoplay id="demo">
+            <!--<source src="videos/video1.mp4">-->
+        </video>
     </div>
 </body>
 <footer>
     <div class="footerLocal"></div>
-
 </footer>
