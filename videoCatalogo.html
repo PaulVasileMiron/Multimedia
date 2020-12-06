@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href= "icon/imagen1.ico" type= "image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/libreria.js"></script>
+    <script src="js/video.js"></script>
 </head>
 <header>
     <div class="headerCatalogo">
@@ -25,9 +26,20 @@
             </article>
         </section>    
         <div id="zonaVideo">
-            <video controls id="video">
+            <video class = "video" id="video" >
                 <source src="videos/video1.mp4">
             </video>
+            <input type="button" id="botonPlay" value="Reproducir">
+            <nav>
+                <input type="button" id="reiniciar" value="reiniciar">
+                <input type="button" id="retrasar" value="&laquo;">
+                <input type="button" id="play" value="&#9658;">
+                <input type="button" id="adelantar" value="&raquo;">
+                <input type="button" id="silenciar" value="silenciar">
+                <label>Volumen</label>
+                <input type="button" id="menosVolumen" value="-">
+                <input type="button" id="masVolumen" value="+">
+        </nav>
         </div>
         
     </div>
