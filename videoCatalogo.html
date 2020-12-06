@@ -5,43 +5,43 @@
     <meta charset="utf-8" />
     <title>Catalogo</title>
     <link rel="stylesheet" href="css/HojaEstilosLibreria.css">
-    <link rel="shortcut icon" href= "icon/imagen1.ico" type= "image/x-icon">
+    <link rel="shortcut icon" href="icon/imagen1.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/libreria.js"></script>
     <script src="js/video.js"></script>
 </head>
 <header>
     <div class="headerCatalogo">
-      <h1>Catálogo de Videos</h1>
+        <h1>Catálogo de Videos</h1>
     </div>
 </header>
 
 <body>
     <div class="Catalogo">
-        <section id="ListaVideo">
-            <article id="Lista">
-                <button onclick="CambiaVideo(1)">Cargar video 1</button>
-                <button onclick="CambiaVideo(2)">Cargar video 2</button>
-                <button onclick="CambiaVideo(3)">Cargar video 3</button>
-            </article>
-        </section>    
+        <section id="zonaLista">
+            <button onclick="CambiaVideo(1)" id="btnVideo1">Video 1</button>
+            <button onclick="CambiaVideo(2)" id="btnVideo2">Video 2</button>
+            <button onclick="CambiaVideo(3)" id="btnVideo3">Video 3</button>
+            <button onclick="CambiaVideo(1)" id="btnVideo4">Video Interactivo 1</button>
+            <button onclick="CambiaVideo(2)" id="btnVideo5">Video Interactivo 2</button>
+            <button onclick="CambiaVideo(3)" id="btnVideo6">Video Interactivo 3</button>
+        </section>
         <div id="zonaVideo">
-            <video class = "video" id="video" >
+            <video class="video" id="video">
                 <source src="videos/video1.mp4">
             </video>
-            <input type="button" id="botonPlay" value="Reproducir">
-            <nav>
-                <input type="button" id="reiniciar" value="reiniciar">
+            <div id="buttons" class="buttons">
                 <input type="button" id="retrasar" value="&laquo;">
-                <input type="button" id="play" value="&#9658;">
+                <input type="button" id="botonPlay" value="&#9658;">
                 <input type="button" id="adelantar" value="&raquo;">
-                <input type="button" id="silenciar" value="silenciar">
-                <label>Volumen</label>
+                <input type="button" id="reiniciar" value="&#8634;">
+                <input type="button" id="silenciar" value="&#x1f507;">
+                <label>Volumen: </label>
                 <input type="button" id="menosVolumen" value="-">
                 <input type="button" id="masVolumen" value="+">
-        </nav>
+            </div>
         </div>
-        
+
     </div>
 
 </body>
