@@ -155,9 +155,10 @@ h1 {
 
 .botonPantalla {
     font-size: 25px;
-    width: 7.5cm;
+    width: 7.65cm;
     height: 5cm;
     background-color: rgb(104, 103, 103);
+    border-radius: 15px;
 }
 
 #respuesta1,
