@@ -130,3 +130,42 @@ h1 {
 .buttons input {
     background-color: rgb(104, 103, 103);
 }
+
+#reiniciaVideo,
+.botonPantalla,
+.botonRespuesta,
+.enlace1 {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 4cm;
+    right: 3.6cm;
+    background-color: rgba(36, 35, 35, 0.829);
+    border-radius: 15px;
+}
+
+.textoverlay,
+.enlace1 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.botonPantalla {
+    font-size: 25px;
+    width: 7.5cm;
+    height: 5cm;
+    background-color: rgb(104, 103, 103);
+}
+
+#respuesta1,
+#respuesta2 {
+    float: left;
+}
+
+#respuesta3,
+#respuesta4 {
+    float: right;
+}
