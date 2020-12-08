@@ -1,4 +1,3 @@
-ite = 5;
 
 function accionPlay() {
     var reproducir = document.getElementById('botonPlay');
@@ -67,7 +66,6 @@ function accionMenosVolumen() {
 
 function iniciar() {
 
-    medio = document.getElementById('video');
     botonPlay = document.getElementById('botonPlay');
     reiniciar = document.getElementById('reiniciar');
     retrasar = document.getElementById('retrasar');
@@ -84,3 +82,26 @@ function iniciar() {
 }
 
 window.addEventListener('load', iniciar, false);
+
+$(document).ready(function() { //Cargamos primero la pagina y los videos
+// Barra de flujo del Video
+progressBar  = document.getElementById('progress-bar');
+video = document.getElementById('video');
+video.addEventListener('timeupdate', updateProgressBar, false); // timeupdate evento que salta cada vez que cambia el tiempo del video
+progressBar.addEventListener("click", seek); //Cambia el tiempo de reproducion del video cuando pulsamos la barra
+
+function seek(e) {
+  var percent = e.offsetX / this.offsetWidth;
+  video.currentTime = percent * video.duration;
+  e.target.value = Math.floor(percent / 100);
+  e.target.innerHTML = progressBar.value + '% played';
+}
+function updateProgressBar() {
+  // Calcula el tiempo que se a reproducido 
+  var percentage = Math.floor((100 / video.duration) * video.currentTime);
+  // Actualiza la barra de tiempo de reproducion del video
+  progressBar.value = percentage;
+
+  progressBar.innerHTML = percentage + '% played';
+}
+});

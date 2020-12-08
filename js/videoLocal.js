@@ -1,22 +1,3 @@
-/*function comenzar() {
-
-    zonaVideo = document.getElementById("zonaVideo");
-    var video = document.getElementById("selector");
-    video.addEventListener("change", procesarVideo, false);
-
-}
-
-function procesarVideo(e) {
-
-    var video = e.target.files;
-    var mi_video = video[0];
-    zonaVideo.innerHTML = video;
-
-}
-
-window.addEventListener("load", comenzar, false)
-*/
-
 $(function() {
     $('#selector').on('change', function(){
         var URL = window.URL || window.webkitURL;
@@ -29,3 +10,8 @@ $(function() {
         
     });
 });
+
+
+// function CambiaVideo(){ /*Para cambiar el video */
+//     var video=$("#demo").query.url("Descargas/videoOnline.mp4")//.attr
+// }
