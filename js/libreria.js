@@ -59,6 +59,8 @@ function compruebaTiempo() {/*Funciones interactivas de los videos*/
       $(".textoverlay").html("");
       preguntaRespondida=false;
     }
+  }else{
+    $(".botonPantalla").css("display","none");
   }
   
 

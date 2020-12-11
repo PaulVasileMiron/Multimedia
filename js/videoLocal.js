@@ -12,6 +12,8 @@ $(function() {
 });
 
 
-// function CambiaVideo(){ /*Para cambiar el video */
-//     var video=$("#demo").query.url("Descargas/videoOnline.mp4")//.attr
-// }
+function CambiaVideo(){ /*Para cambiar el video */
+    var video=$("#demo").attr("src","C:/Users/User/Downloads/videoOnline.mp4");
+    //"C:/Users/User/Desktop/online/videoOnline.mp4"
+    //console.log(video);
+}
