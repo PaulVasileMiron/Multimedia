@@ -5,17 +5,31 @@
     <meta charset="utf-8" />
     <title>VideoLocal</title>
     <link rel="stylesheet" href="css/HojaEstilosVideo.css">
-    <link rel="shortcut icon" href= "icon/imagen1.ico" type= "image/x-icon">
+    <link rel="shortcut icon" href="icon/imagen1.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/videoLocal.js"></script>
 </head>
 <header>
     <div class="headerLocal" id="zonaSelector">
-        <form name="formulario" class="formulario">
-            <p>
-                Seleccionar video: <br><input type="file" accept="video/*, .mkv, .asf, .flv, .rm, .rmvb, .3gpp, .mp4, .avi, .mpg" name="selector" id="selector">
-            </p>
-            <button id="btnComp">Comprimir archivo</button>
+        <form action="http://localhost:3000/convert" method="post" enctype="multipart/form-data" class="formulario">
+            <div class="form-group">
+                <input type="file" name="file" accept="video/*, .mkv, .asf, .flv, .rm, .rmvb, .3gpp, .mp4, .avi, .mpg" id="selector">
+            </div>
+            <div class="form-group">
+                <label for="to">Convertir a:</label>
+                <select class="form-control" name="to">
+                <option>mp4</option>
+                <option>flv</option>
+                <option>avi</option>
+                <option>mov</option>
+              </select>
+            </div>
+            <br />
+            <div class="form-group">
+                <button id="btnComp">
+                Convertir
+              </button>
+            </div>
         </form>
     </div>
 </header>
