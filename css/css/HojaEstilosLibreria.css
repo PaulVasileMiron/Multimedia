@@ -1,0 +1,240 @@
+/* Catalogo/Libreria */
+
+.headerCatalogo {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 180, 180);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    color: purple;
+}
+
+h1 {
+    padding-top: 0.75cm;
+}
+
+.Catalogo {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 720px;
+    background-color: rgb(173, 173, 173);
+}
+
+#zonaLista {
+    display: grid;
+    width: 25%;
+    height: 720px;
+    background-color: rgb(173, 173, 173);
+    padding-top: 15px;
+    float: left;
+    grid-template-rows: repeat(6, 50px);
+    gap: 15px;
+}
+
+#btnVideo1 {
+    background-color: rgb(104, 103, 103);
+    width: 90%;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: center;
+}
+
+#btnVideo2 {
+    background-color: rgb(104, 103, 103);
+    width: 90%;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: center;
+}
+
+#btnVideo3 {
+    background-color: rgb(104, 103, 103);
+    width: 90%;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    justify-self: center;
+}
+
+#btnVideo4 {
+    background-color: rgb(104, 103, 103);
+    width: 90%;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    justify-self: center;
+}
+
+#btnVideo5 {
+    background-color: rgb(104, 103, 103);
+    width: 90%;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 5;
+    justify-self: center;
+}
+
+#btnVideo6 {
+    background-color: rgb(104, 103, 103);
+    width: 90%;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-row-start: 6;
+    justify-self: center;
+}
+
+#zonaVideo {
+    display: block;
+    position: relative;
+    padding-top: 15px;
+    width: 75%;
+    height: 720px;
+    background-color: rgb(173, 173, 173);
+    float: right;
+}
+
+#video {
+    padding-top: 40px;
+    width: 100%;
+    height: 700px;
+}
+
+.footerLocal {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(245, 180, 180);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#video {
+    max-height: 650px;
+}
+
+#buttons {
+    padding-left: 150px;
+}
+
+#botonPlay {
+    height: 20px;
+    border-radius: 100%;
+}
+
+.buttons input {
+    background-color: rgb(104, 103, 103);
+}
+
+#reiniciaVideo,
+.botonPantalla,
+.botonPantalla2,
+.botonPantalla3,
+.botonRespuesta,
+.enlace1{
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 4cm;
+    right: 4.5cm;
+    background-color: rgba(36, 35, 35, 0.829);
+    border-radius: 15px;
+    
+}
+
+.textoverlay,
+.enlace1 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.textoverlay2,
+.textoverlay3,
+.textoReserva{
+    display: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.botonPantalla,
+.botonPantalla2,
+.botonPantalla3 {
+    font-size: 25px;
+    width: 7cm;
+    height: 5cm;
+    background-color: rgb(104, 103, 103);
+    border-radius: 15px;
+}
+
+#reiniciaVideo{
+    background-color: rgb(104, 103, 103);
+    width: 4.5cm;
+    height: 4.5cm;
+    border-radius: 100%;
+    margin-bottom: 0.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+
+}
+
+#imagenReiniciar{
+    width: 4cm;
+    height: 4cm;
+    border-radius: 100%;
+}
+
+#respuesta1,
+#respuesta2,
+#respuesta5video2,
+#respuesta6,
+#respuesta9,
+#respuesta10 {
+    float: left;
+}
+
+#respuesta3,
+#respuesta4,
+#respuesta7,
+#respuesta8,
+#respuesta11,
+#respuesta12 {
+    float: right;
+}
+
+#respuestaTexto{
+    width: 10cm;
+    height: 1.75cm;
+    font-size: 25px;
+    margin-left: 1cm;
+    background-color: rgb(219, 216, 216);
+}
+
+#respuesta5{
+    width: 3cm;
+    height: 1cm;
+    font-size: 20px;
+    color: white;
+    margin-left: 4.75cm;
+    margin-bottom: 0.5cm;
+    background-color: rgb(104, 103, 103);
+    border-radius: 15px;
+}
+
+.imagenKayak{
+    display: none;
+}
+
+#imgKayak{
+    width : 300px;
+    height: 100px;
+}

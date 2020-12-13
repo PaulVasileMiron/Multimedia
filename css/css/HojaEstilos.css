@@ -1,0 +1,118 @@
+.body {
+    color: whitesmoke;
+}
+
+.header {
+    display: block;
+    position: relative;
+    background: linear-gradient(lightpink, violet);
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+}
+
+.imagenPortada {
+    position: relative;
+    right: 9em;
+    top: 2em;
+    float: right;
+}
+
+.imgportada {
+    height: 400px;
+    width: 400px;
+}
+
+.textoPortada {
+    position: relative;
+    float: left;
+    size: 140cm;
+    color: white;
+    font-size: 35px;
+    top: 3.5cm;
+    left: 6.5cm;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    display: block;
+    padding-top: 5px;
+}
+
+h2 {
+    margin-left: 3cm;
+    font-size: 30px;
+    color: rgb(65, 64, 64);
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: 25% repeat(4, 200px) 25%;
+    grid-template-rows: 200px 50px 200px 50px;
+    gap: 10px;
+    align-items: center;
+}
+
+.cuadroCatalogo {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    justify-self: center;
+}
+
+.cuadroLocal {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    justify-self: center;
+}
+
+.cuadroVideoOnline {
+    grid-row-start: 1;
+    grid-column-start: 4;
+    justify-self: center;
+}
+
+.imgCatalogo{
+    height: 150px;
+    width: 150px;
+    border: rgb(207, 148, 207) 4px solid;
+    padding: 10px;
+}
+
+.imgLocal{
+    height: 150px;
+    width: 150px;
+    border: rgb(207, 148, 207) 4px solid;
+    padding: 10px;
+}
+
+.imgVideoOnline{
+    height: 150px;
+    width: 150px;
+    border: rgb(207, 148, 207) 4px solid;
+    padding: 10px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.Catalogo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: center;
+}
+
+.Local {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    justify-self: center;
+}
+
+.VideoOnline {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    justify-self: center;
+}
