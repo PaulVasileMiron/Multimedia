@@ -9,31 +9,20 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/videoOnline.js"></script>
 </head>
-<!-- <header>
-    <div class="headerLocal" id="zonaSelector">
-        <form action="http://localhost:3000/download/" method="GET">
-            <div class="form-group">
-                <input class="form-control" type="text" name="url" placeholder="https://www.youtube.com/watch?v=MtN1YnoL46Q" required />
-            </div>
-            <div class="form-group text-center">
-                <input class="btn btn-primary" type="submit" value="Descargar:" />
-            </div>
-        </form>
-    </div>
-</header>  -->
 <header>
     <div class="headerLocal" id="zonaSelector">
-        <form action="http://localhost:3000/download/" method="GET">
+        <form action="http://localhost:3000/download/" method="GET" class="formulario">
             <div class="form-group">
                 <input class="form-control" type="text" name="url" placeholder="Video de youtube" required />
             </div>
+            <br>
             <div class="form-group text-center">
-                <input class="btn btn-primary" type="submit" value="Descargar:" />
+                <input class="btn btn-primary" type="submit" value="Descargar" id="descargar" />
+            </div>
+            <div>
+                <button onclick="CambiaVideo()" id="reproducir" class="reproducir">Reproducir</button>
             </div>
         </form>
-        <div>
-            <button onclick="CambiaVideo()" id="reproducir" class="reproducir">reproducir</button>
-        </div>
     </div>
 </header>
 
