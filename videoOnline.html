@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>VideoOnline</title>
     <link rel="stylesheet" href="css/HojaEstilosVideo.css">
-    <link rel="shortcut icon" href= "icon/imagen1.ico" type= "image/x-icon">
+    <link rel="shortcut icon" href="icon/imagen1.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/videoOnline.js"></script>
 </head>
@@ -25,7 +25,7 @@
     <div class="headerLocal" id="zonaSelector">
         <form action="http://localhost:3000/download/" method="GET">
             <div class="form-group">
-                <input class="form-control" type="text" name="url" placeholder="https://www.youtube.com/watch?v=MtN1YnoL46Q" required />
+                <input class="form-control" type="text" name="url" placeholder="Video de youtube" required />
             </div>
             <div class="form-group text-center">
                 <input class="btn btn-primary" type="submit" value="Descargar:" />
@@ -39,10 +39,9 @@
 
 <body>
     <div class="videoLocal" id="zonaVideo">
-        
         <video controls class="demo" id="demo">
             <source src="">
-        </video> 
+        </video>
     </div>
 </body>
 <footer>
