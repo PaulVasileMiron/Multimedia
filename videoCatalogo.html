@@ -9,13 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/libreria.js"></script>
     <script src="js/video.js"></script>
-    <style >.overlay{
-        position:absolute;top:20%;left:65%;z-index:1;
-    }
-    .textoverlay, .enlace1{
-        font-size:25px;color:white;font-weight: bold;
-    }
-    </style>
 </head>
 <header>
     <div class="headerCatalogo">
@@ -39,25 +32,43 @@
             </video>
             <div class="overlay" >
                 <p class="textoverlay"></p> <!-- Texto vacio para usarlo durante el video -->
-                <button id="reiniciaVideo" onclick="reiniciaVideo()">Click para volver a ver el video</button>
+                <p class="textoverlay2"></p>
+                <p class="textoverlay3"></p>
+                <button id="reiniciaVideo" onclick="reiniciaVideo()">
+                    <img src="img/imagen2.png" id="imagenReiniciar">
+                </button> 
                 <button id="respuesta1" class="botonPantalla">Fresa</button>
                 <button id="respuesta2" class="botonPantalla">Manzana</button>
                 <button id="respuesta3" class="botonPantalla">Pera</button>
                 <button id="respuesta4" class="botonPantalla">Platano</button>
+                <button id="respuesta5video2" class="botonPantalla2">Roja</button>
+                <button id="respuesta6" class="botonPantalla2">Verde</button>
+                <button id="respuesta7" class="botonPantalla2">Azul</button>
+                <button id="respuesta8" class="botonPantalla2">Naranja</button>
+                <button id="respuesta9" class="botonPantalla3">Oxigeno</button>
+                <button id="respuesta10" class="botonPantalla3">Magnesio</button>
+                <button id="respuesta11" class="botonPantalla3">Fluor</button>
+                <button id="respuesta12" class="botonPantalla3">Potasio</button>
                 <input id="respuestaTexto" class="botonRespuesta" type="text">
+                <br>
                 <button id="respuesta5" class="botonRespuesta">Enviar</button>
                 <a href= "https://es.wikipedia.org/wiki/Kayak" class="enlace1"></a> <!-- Enlace vacio para usarlo durante el video -->
-            </div> 
+                <p class="textoReserva"></p>
+                <a href="https://rogles.org/piraguismo/" class="imagenKayak">
+                    <img src="img/imagen3.png" id="imgKayak">
+                </a>
+            </div>
+
             <div id="buttons" class="buttons">
                 <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
-                <input type="button" id="retrasar" value="&laquo;">
-                <input type="button" id="botonPlay" value="&#9658;">
-                <input type="button" id="adelantar" value="&raquo;">
-                <input type="button" id="reiniciar" value="&#8634;">
-                <input type="button" id="silenciar" value="&#x1f507;">
+                <input type="button" id="retrasar" class="botones" value="&laquo;">
+                <input type="button" id="botonPlay" class="botones" value="&#9658;">
+                <input type="button" id="adelantar" class="botones" value="&raquo;">
+                <input type="button" id="reiniciar" class="botones" value="&#8634;">
+                <input type="button" id="silenciar" class="botones" value="&#x1f507;">
                 <label>Volumen: </label>
-                <input type="button" id="menosVolumen" value="-">
-                <input type="button" id="masVolumen" value="+">
+                <input type="button" id="menosVolumen" class="botones" value="-">
+                <input type="button" id="masVolumen" class="botones" value="+">
             </div>
         </div>
 
