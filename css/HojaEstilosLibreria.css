@@ -133,17 +133,20 @@ h1 {
 
 #reiniciaVideo,
 .botonPantalla,
+.botonPantalla2,
+.botonPantalla3,
 .botonRespuesta,
-.enlace1 {
+.enlace1{
     display: none;
 }
 
 .overlay {
     position: absolute;
     top: 4cm;
-    right: 3.6cm;
+    right: 4.5cm;
     background-color: rgba(36, 35, 35, 0.829);
     border-radius: 15px;
+    
 }
 
 .textoverlay,
@@ -151,22 +154,87 @@ h1 {
     font-size: 25px;
     color: white;
     font-weight: bold;
+
 }
 
-.botonPantalla {
+.textoverlay2,
+.textoverlay3,
+.textoReserva{
+    display: none;
     font-size: 25px;
-    width: 7.65cm;
+    color: white;
+    font-weight: bold;
+}
+
+.botonPantalla,
+.botonPantalla2,
+.botonPantalla3 {
+    font-size: 25px;
+    width: 7cm;
     height: 5cm;
     background-color: rgb(104, 103, 103);
     border-radius: 15px;
 }
 
+#reiniciaVideo{
+    background-color: rgb(104, 103, 103);
+    width: 4.5cm;
+    height: 4.5cm;
+    border-radius: 100%;
+    margin-bottom: 0.5cm;
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+
+}
+
+#imagenReiniciar{
+    width: 4cm;
+    height: 4cm;
+    border-radius: 100%;
+}
+
 #respuesta1,
-#respuesta2 {
+#respuesta2,
+#respuesta5video2,
+#respuesta6,
+#respuesta9,
+#respuesta10 {
     float: left;
 }
 
 #respuesta3,
-#respuesta4 {
+#respuesta4,
+#respuesta7,
+#respuesta8,
+#respuesta11,
+#respuesta12 {
     float: right;
+}
+
+#respuestaTexto{
+    width: 10cm;
+    height: 1.75cm;
+    font-size: 25px;
+    margin-left: 1cm;
+    background-color: rgb(219, 216, 216);
+}
+
+#respuesta5{
+    width: 3cm;
+    height: 1cm;
+    font-size: 20px;
+    color: white;
+    margin-left: 4.75cm;
+    margin-bottom: 0.5cm;
+    background-color: rgb(104, 103, 103);
+    border-radius: 15px;
+}
+
+.imagenKayak{
+    display: none;
+}
+
+#imgKayak{
+    width : 300px;
+    height: 100px;
 }
